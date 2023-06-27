@@ -54,6 +54,7 @@
       <a-asset-item id="left-gltf" src="https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/skeleton-left-hand-webxr/model.gltf"></a-asset-item>
       <a-asset-item id="watergun-gltf" src="https://cdn.glitch.global/d29f98b4-ddd1-4589-8b66-e2446690e697/watergun.glb?v=1646916260646"></a-asset-item>
       <a-asset-item id="totem" src="models/totem.glb"></a-asset-item>
+      <a-asset-item id="eyes" src="models/eyes.glb"></a-asset-item>
       <img id="bake" src="https://cdn.glitch.global/d29f98b4-ddd1-4589-8b66-e2446690e697/Bake(3).webp?v=1644331344700" crossorigin="anonymous">
       <a-mixin id="animations" animation__click="property: components.material.material.color; type: color; to: blue; startEvents: click; dur: 500;"></a-mixin>
       <a-mixin id="blink" blink-controls="rotateOnTeleport:false;cameraRig: #cameraRig; teleportOrigin: #head; collisionEntities:.navmesh;"></a-mixin>
@@ -166,6 +167,8 @@
       </a-box>
 
       <a-gltf-model shadow="receive: false" src="#totem" position="-22.77388 -0.26308 -1.45395" scale="0.5 0.5 0.5" rotation="-2 118.12 0" gltf-model="models/totem.glb"></a-gltf-model>
+
+      <a-gltf-model shadow="receive: false" src="#eyes" position="0.35947 1.9952 -10.66592" scale="1 1 1" rotation="-2 118.12 0" gltf-model="models/eyes.glb"></a-gltf-model>
     
     <!-- <a-gltf-model class="navmesh" src="#navmesh-glb" visible="false"></a-gltf-model> -->
       <a-gltf-model src="#building-glb"
@@ -180,14 +183,7 @@
     </a-entity>
 
     <a-plane height="0.25" width="0.8" position="0.35947 1.9952 -10.66592" rotation="0 40 0">
-      <a-entity position="-0.3 0 0">
-        <a-text position="0 0.05 0" width="1" color="black" value="Uknown" text=""></a-text>
-        <a-text position="" width="1" color="black" value="A Private Swim, 2020" text=""></a-text>
-      </a-entity>
-  </a-plane>
-
-	</a-scene>
-
+     
 	<div id="dom-overlay">
     <h1>
     </h1>
